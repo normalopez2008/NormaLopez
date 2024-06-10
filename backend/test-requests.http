@@ -1,0 +1,82 @@
+### CREATE five documents.
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Cancun",
+    "age": 26,
+    "date": "09-04-2016"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Cabo",
+    "age": 28,
+    "date": "07-15-2018"
+}
+
+### CREATE 3
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Destin, Fl.",
+    "age": 32,
+    "date": "06-24-2023"
+}
+
+### CREATE 4
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Round Rock, Tx.",
+    "age": 33,
+    "date": "06-24-2023"
+}
+
+### CREATE 5
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Austin, Tx.",
+    "age": 32,
+    "date": "04-23-2022"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/travels HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/travels/6566b57fa1df421e2a022244 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the age:
+PUT http://localhost:3000/travels/6566b5ada1df421e2a022245 HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Round Rock, Tx.",
+    "age": 30,
+    "date": "06-24-2023"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/travels/6566b57fa1df421e2a022244 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/travels HTTP/1.1
+
