@@ -1,0 +1,290 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&family=Playpen+Sans:wght@300;600;700&display=swap');
+
+
+
+/*   ----- Variables  -----  */
+:root {
+  --pumpkin:#D0784Acc;
+  --spice:#A06D52;
+  --muddy:#634434;
+  --peachy:#B87B69;
+  --stone:#D9B1A3;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {}. */
+  /*background-color:;*/
+  background-image:url(images/background-sunset-in-houston.jpeg);
+  background-position: center;
+  background-size: cover;
+  color:#634434;
+  font-family: 'Open Sans', sans-serif;
+  margin:0 auto;
+  padding:2%;
+  max-width:90%;
+  
+}
+
+/*  ----- Page layout blocks -----  */
+header img {width: 40px;padding: auto;}
+header {
+  background-color:#A06D52;
+  color:#634434;
+  font-family: 'Playpen Sans', cursive;
+  margin: 0;
+  padding: 2%;
+  border: 4px solid #D0784ACC;
+  text-align: center;
+}
+main {
+  background-color:#D9B1A3;
+  color:#634434;
+  margin: 0;
+  padding: 2%;
+  border: 4px solid #A06D52;
+}
+section {}
+article {}
+  #topic1 {}
+  #topic2 {}
+div {}
+aside {}
+footer {
+  background-color:#D9B1A3;
+  color:#634434;
+  margin: 0;
+  padding: 2%;
+  border: 4px solid #A06D52;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  text-align:center
+}
+nav a {
+  background-color:#634434;
+  border:2px solid #A06D52;
+  border-radius:4px 4px 0 0; 
+  color:#D9B1A3;
+  font-size:1.4em;
+  font-weight:bold;
+  margin-right:4px;
+  padding: 10px;
+  text-decoration:none;
+}
+nav.local {
+  display: flex;
+  background-color:#B87B69;
+  border:2px solid #A06D52;
+  border-radius:6px 6px 0 0; 
+  color:#D9B1A3;
+  font-size:1em;
+  font-weight:bold;
+  margin-right:4px;
+  padding: 8px;
+  text-decoration:none;
+
+}
+nav a:hover {
+
+  background-color:#A06D52;
+  color:#634434;
+}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Lato', sans-serif;} 
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+}
+caption {
+  background-color: #D9B1A3;
+  border: 2px solid #A06D52;
+  font-weight: bold;
+  padding: 2%;
+}
+thead {
+  height: 30px;
+}
+tbody {text-align: left;}
+tr th{
+  background-color: #B87B69;
+  padding: 3%;
+  min-width: 95%;
+}
+th, td {border: 2px solid #634434;}
+tfoot {}
+tr {}
+  tr:nth-child(even) {}
+th {}
+td {}
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+fieldset {
+  border: #634434 2px dashed;
+  background-color: #D9B1A3;
+  margin: 2%;
+}
+  legend {
+  border: #634434 2px solid;
+  background-color:#B87B69;
+  margin: .5%;
+  }
+label {
+  display: block;
+  margin:auto
+  
+
+}
+button {
+  padding: 1%;
+  font-size: 80%;
+}
+input {
+  padding: 1%;
+  font-size: 60%;
+}
+select {
+  padding: 2%;
+  font-size: 90%;
+}
+  optgroup {}
+  option {}
+textarea {
+  padding: 3%;
+  font-size: 60%;
+}
+output {}
+meter {}
+progress {}
+
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+  figure img {}  
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  margin:auto;
+  padding: 0%;
+}
+.gallery figure {
+  width: 360px;
+  margin: auto;
+  padding: 1%;
+  border:2px solid #A06D52;
+}
+.gallery figcaption {
+  display: block;
+  padding: 3%;
+}
+.gallery img {
+  width: 100%;
+  margin: 0;
+}
+
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
+
